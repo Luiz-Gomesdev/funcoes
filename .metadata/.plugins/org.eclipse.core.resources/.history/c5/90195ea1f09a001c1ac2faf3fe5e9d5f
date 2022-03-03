@@ -1,0 +1,30 @@
+package funcoesSintaxe;
+
+import java.util.Scanner;
+
+public class JavaMath {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter with three numbers ");
+		System.out.println(" - Enter with number one: ");
+		int a = sc.nextInt();
+		System.out.println(" - Enter with number two: ");
+		int b = sc.nextInt();
+		System.out.println(" - Enter with number three: ");
+		int c = sc.nextInt();
+		
+		if (a > b && a > c) {
+			System.out.println("Number higher= " + a);
+		}else if (b > c) {
+			System.out.println("Number higher= " + b);
+		}else {
+			System.out.println("Number higher= " + c);
+		}
+		
+		sc.close();
+	}
+
+}
